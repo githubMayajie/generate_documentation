@@ -1,0 +1,38 @@
+// test1 annotation
+
+// set path
+@path: "$(project)/test1"
+
+// class-key attr class-head-name base-clause { member-specification } 	
+// https://en.cppreference.com/w/cpp/language/class
+
+// enum-key attr(optional) enum-name(optional) enum-base(optional)(C++11) { enumerator-list(optional) } 	(1) 	
+// enum-key attr(optional) enum-name enum-base(optional) ; 	(2) 	(since C++11)
+// https://en.cppreference.com/w/cpp/language/enum
+
+// noptr-declarator ( parameter-list ) cv(optional) ref(optional) except(optional) attr(optional) 	(1) 	
+// noptr-declarator ( parameter-list ) cv(optional) ref(optional) except(optional) attr(optional) -> trailing 	(2) 	(since C++11)
+// https://en.cppreference.com/w/cpp/language/function
+
+//test enum 
+@desc: enum 1 desc
+enum E1{
+    a = 0,
+    b = 1,
+}
+
+enum {
+    E2_a = 0,
+    E2_b = 1,
+}
+
+enum class E3 : public std::uint8 {
+    a = 0,
+    b = 1,
+}
+
+enum class : public std::string{
+    a = "0",
+    b = "1",
+}
+
